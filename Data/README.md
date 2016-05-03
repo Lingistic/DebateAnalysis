@@ -1,0 +1,1 @@
+Input data should be in files with .txt extension, and in the format <filename>_int.txt where the int value corresponds to the debate instance
