@@ -3,6 +3,7 @@ import re
 import os
 from glob import glob
 
+
 class DebateParser:
     '''
     this class parses the debates and creates two files: a file with one statement per line (for training mallet) and a
@@ -121,6 +122,7 @@ class DebateParser:
                     gop = statement[2]
                     debate_number = statement[3]
                     writer.writerow([speaker, text.replace('\n', ' '), dem, gop, debate_number])
+
 
 if __name__ == "__main__":
     parser = DebateParser("./data/debates")
